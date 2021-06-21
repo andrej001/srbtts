@@ -1,40 +1,41 @@
-# Text to Speech in Serbian Language 🇷🇸
-**ANDREJ RAJKOV - PETNICA PROJECT 2021**
+# Text to Speech za Srpski jezik 🇷🇸
+**ANDREJ RAJKOV - PETNIČKI PROJEKAT 2021**
 
-The first version of TTS in Serbian.
+Prva verzija TTS-a na srpskom jeziku. 
 
-This program converts the desired text from a text file to speech as an audio file.
+Ovaj program pretvara željeni tekst iz tekst fajla u govor u vidu audio fajla.
 
-## How it works
+## Način rada
 
-+ The project is / will be done in Python completely.
-+ The project uses the [PYDUB](http://pydub.com/) library to manipulate sound.
-+ In its most basic form (version 1.0), the program takes letters and pauses from a string and appends audio files with that letter's name.
++ Projekat je/će biti rađen u Python-u u potpunosti. 
++ Projekat koristi [PYDUB](http://pydub.com/) biblioteku za manipulaciju zvuka.
++ U najosnovnijem obliku (verziji 1.0) program uzima slova i pauze iz stringa i nadovezuje audio fajlove sa imenom slova.
 ```
 for x in string:
-    combined + = AudioSegment.from_mp3 (x + ". mp3")
+    combined+=AudioSegment.from_mp3(x+".mp3")
 ```
-## NOTE
 
-+ This version of TTS is **not** the final version, but only a proof of concept.
-+ In the final version, v2.0, better audio libraries, accentation, punctuation will be implemented.
-There is a possibility of introducing context algorithms in future versions.
+## NAPOMENA
 
-## Requirements
++ Ova verzija TTS-a **nije** finalna verzija, već samo proof of concept.
++ U finalnoj verziji, v2.0, biće implementirane bolje audio biblioteke, akcentacija, interpunkcija.
+Postoji mogućnost uvođenja algoritama za kontekst u narednim verzijama.
 
-The program has been tested on Linux, but probably works on Windows as well.
+## Sistemski zahtevi
+
+Program je testiran na Linuxu, ali verovatno radi i na Windows sistemima.
 
 + [FFMPEG](https://ffmpeg.org/)
 
-## Further developement
+## Dalji napredak
 
-The following improvements are planned for the next version:
+Za sledeću verziju planirana su sledeća poboljšanja:
 
-+ New audio library (engine will have a smoother and more natural pronunciation of letters and words)
-+ Accentation according to the rules of the Serbian language (word modulation - length and tone change)
-+ Punctuation (change of tone depending on .,!?)
-+ Add a simple GUI and add an EXE file
++ Nova audio biblioteka (engine će imati tečniji i prirodniji izgovor slova i reči)
++ Akcentacija po pravilima srpskog jezika (modulacija reči - dužina i promena tona)
++ Interpunkcija (promena tona u zavisnosti od .,!?)
++ Dodavanje prostog GUI-a i dodavanje EXE fajla
 
-Later versions will also include:
+Kasnije verzije će sadržati i:
 
-+ Algorithms for context (solves problems like Luka/ luka, da dâ)
++ Algoritmi za kontekst (rešava probleme Luka/ luka, da dâ)
